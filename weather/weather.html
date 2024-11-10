@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_name" />
+	<title>Weather</title>
+</head>
+<body>
+	<div class="main">
+		<header class="input-container">
+			<input class="city_input" type="text" placeholder="Search City">
+			<button class="seacrh_btn">
+				<span class="material-symbols-outlined">
+					search
+				</span>
+			</button>
+		</header>
+		<section class="weather_info" style="display: none;">
+			<div class="location_data_container">
+				<div class="location">
+					<span class="material-symbols-outlined">
+						location_on
+					</span>
+					<h4 class="country_txt"> Jakarta </h4>
+				</div>
+				<h5 class="current_date_txt"> Wed, 07 Aug </h5>
+			</div>
+			<div class="weather_summary_container">
+				<img src="assets/sunny.png" alt="" class="weather_summary_img">
+				<div class="weather_sumamry_info">
+					<h1 class="temp_txt">29°C</h1>
+					<h3 class="condition_txt">Sunny</h3>
+				</div>
+			</div>
+			<div class="weather_conditions_container">
+				<div class="condition_item">
+					<span class="material-symbols-outlined">
+						water_drop
+					</span>
+					<div class="condition_info">
+						<h5>Humidity</h5>
+						<h5 class="humidity_value_txt">55%</h5>
+					</div>
+				</div>
+				<div class="condition_item">
+					<span class="material-symbols-outlined">
+						air
+					</span>
+					<div class="condition_info">
+						<h5>Wind Speed</h5>
+						<h5 class="wind_value_txt">2 m/s</h5>
+					</div>
+				</div>
+			</div>
+			<div class="forecast_items_container">
+				<div class="forecast_item">
+					<h5 class="forecast_item_date">05 Aug</h5>
+					<img src="assets/sunny.png" class="forecast_item_img">
+					<h5 class="forecast_item_temp">29°C</h5>
+				</div>
+				<div class="forecast_item">
+					<h5 class="forecast_item_date">05 Aug</h5>
+					<img src="assets/sunny.png" class="forecast_item_img">
+					<h5 class="forecast_item_temp">29°C</h5>
+				</div>
+				<div class="forecast_item">
+					<h5 class="forecast_item_date">05 Aug</h5>
+					<img src="assets/sunny.png" class="forecast_item_img">
+					<h5 class="forecast_item_temp">29°C</h5>
+				</div>
+				<div class="forecast_item">
+					<h5 class="forecast_item_date">05 Aug</h5>
+					<img src="assets/sunny.png" class="forecast_item_img">
+					<h5 class="forecast_item_temp">29°C</h5>
+				</div>
+				<div class="forecast_item">
+					<h5 class="forecast_item_date">05 Aug</h5>
+					<img src="assets/sunny.png" class="forecast_item_img">
+					<h5 class="forecast_item_temp">29°C</h5>
+				</div>
+			</div>
+		</section>
+		<section class="search_city section_message">
+			<img src="assets/he_sitting_with_notebook.png" class="message_img">
+			<div>
+				<h1>Search City</h1>
+				<h4> Find put the weather consitions of the city</h4>
+			</div>
+		</section>
+		<section class="not_found section_message" style="display: none;">
+			<img src="assets/she_with_phone.png" class="message_img">
+			<div>
+				<h1>City is not found</h1>
+				<h4> try again please</h4>
+			</div>
+		</section>
+	</div>
+	<script src="js.js"></script>
+</body>
+</html>
